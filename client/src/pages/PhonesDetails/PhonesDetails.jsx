@@ -15,7 +15,7 @@ const PhonesDetails = () => {
             .getOnePhone(phone_id)
             .then(({data}) => setPhones(data))
             .catch(err => console.error(err))
-    }, [])
+    }, )
 
 
     return (
