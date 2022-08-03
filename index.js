@@ -3,9 +3,23 @@ const express = require("express");
 const app = express();
 console.log("jbsd")
 const router = require("express").Router();
-
+const cors = require("cors")
 // ℹ️ Sets the PORT for our app to have access to it. If no env has been set, we hard code it to 
 const PORT = process.env.PORT || 5005;
+path = require('path');
+app.use(express.static(__dirname + '/assets/images'));
+
+
+app.use(
+    cors({
+      credentials: true,
+      origin: 'http://localhost:3000'
+    })
+  );
+
+
+
+
 
 app.listen(PORT, () => {
   console.log(`Server listening on port http://localhost:${PORT}`);
