@@ -4,16 +4,15 @@ const phoneSchema = new Schema(
 	{
 		name: {
 			type: String,
-			required: [true, "Name is required"],
+			required: true,
 		},
 		manufacturer: {
 			type: String,
-			required: [true, "Manufacturer is required"],
+			required: true,
 		},
 		description: {
 			type: String,
-			required: [true, "Description is required"],
-			minlength: [10, "Description must be at least 10 characters long"],
+			required: true,
 		},
 		color: {
 			type: String,

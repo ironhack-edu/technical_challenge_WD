@@ -32,13 +32,13 @@ const PhoneList = () => {
 				</Container>
 			) : (
 				<Container className="py-5">
-					<Row>
+					<Row className="pb-4">
 						<h1>All our phones</h1>
 					</Row>
 					<Row>
 						{phones.map(phone => {
 							return (
-								<Col key={phone._id} md={3}>
+								<Col key={phone._id} md={3} className="pb-4">
 									<PhoneCard phone={phone} />
 								</Col>
 							)
