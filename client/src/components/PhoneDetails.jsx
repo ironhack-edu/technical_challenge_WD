@@ -5,45 +5,51 @@ import axios from "axios";
 
 function PhoneDetails() {
   const [phone, setPhone] = useState({});
-
   const { id } = useParams();
-  async function onePhone() {
-    try {
-      const response = await axios.get(`http://localhost:5005/phones/${id}`);
-      setPhone(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+
   useEffect(() => {
-    onePhone();
+    async function fetchPhone() {
+      try {
+        const response = await axios.get(`http://localhost:5005/phones/${id}`);
+        setPhone(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchPhone();
   }, [id]);
 
   return (
-    <div>
-      {phone ? (
+    <div className="d-flex justify-content-center mt-5">
+      {phone && (
         <Card style={{ width: "20rem" }}>
-          <Card.Img
-            variant="top"
-            src={`../images/${phone.imageFileName}`}
-            style={{ height: "100%" }}   
-          />
+          <Card.Img variant="top" style={{ width: "20rem" }} src={`../images/${phone.imageFileName}`} />
           <Card.Body>
-            <Card.Title style={{textAlign:"center"}}>{phone.name}</Card.Title>
-            <Card.Title style={{textAlign:"center"}} >{phone.manufacturer}</Card.Title>
-            <Card.Text>Price:{phone.price}</Card.Text>
+            <Card.Title>{phone.name}</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">
+              {phone.manufacturer}
+            </Card.Subtitle>
+            <Card.Text>
+              <strong>Price:</strong> {phone.price}€
+            </Card.Text>
             <Card.Text>{phone.description}</Card.Text>
             <Card.Text>
-              <h3>Specs</h3>
-              <p>Color: {phone.color}</p>
-              <p>Screen: {phone.screen}</p>
-              <p>Processor: {phone.processor}</p>
-              <p>RAM: {phone.ram}</p>
+              <h4>Specs</h4>
+              <p>
+                <strong>Color:</strong> {phone.color}
+              </p>
+              <p>
+                <strong>Screen:</strong> {phone.screen}
+              </p>
+              <p>
+                <strong>Processor:</strong> {phone.processor}
+              </p>
+              <p>
+                <strong>RAM:</strong> {phone.ram}
+              </p>
             </Card.Text>
           </Card.Body>
         </Card>
-      ) : (
-        ""
       )}
     </div>
   );
