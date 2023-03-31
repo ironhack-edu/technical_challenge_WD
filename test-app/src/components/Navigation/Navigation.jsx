@@ -6,7 +6,7 @@ const Navigation = () => {
 
     return (
         <>
-            <Navbar bg="dark" variant="dark" expand="lg" className="mb-5">
+            <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
                 <Container>
                     <Link to='/'>
                         <Navbar.Brand as="span">Phones</Navbar.Brand>
