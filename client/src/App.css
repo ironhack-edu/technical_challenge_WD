@@ -1,0 +1,33 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.center {
+ display: flex;
+ justify-content: center;
+}
+
+button {
+  margin: 5px
+}
+
+.card {
+  width: 38rem
+}
+
+.detailsImg {
+  max-height: 18rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.manufacturer {
+  font-weight: bold;
+}
+
+.description {
+  font-style: italic;
+}
