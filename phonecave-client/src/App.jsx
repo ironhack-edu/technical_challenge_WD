@@ -17,7 +17,9 @@ import {
 function App() {
 	const [phones, setPhones] = useState(null);
 	const [loading, setLoading] = useState(true);
-	const [openedIndex, setOpenedIndex] = useState(null);
+	const [openedIndex, setOpenedIndexes] = useState([]);
+
+	console.log(openedIndex);
 
 	useEffect(() => {
 		const getPhones = async () => {
@@ -48,15 +50,21 @@ function App() {
 							<Box maw={400} mx="auto" key={phone.id}>
 								<Group position="center" mb={5}>
 									<Button
-										onClick={() =>
-											setOpenedIndex(openedIndex === index ? null : index)
-										}
+										onClick={() => {
+											if (openedIndex.includes(index)) {
+												setOpenedIndexes(
+													openedIndex.filter((i) => i !== index)
+												);
+											} else {
+												setOpenedIndexes([...openedIndex, index]);
+											}
+										}}
 									>
 										{phone.name}
 									</Button>
 								</Group>
 
-								<Collapse in={openedIndex === index}>
+								<Collapse in={openedIndex.includes(index)}>
 									<Text>
 										<Image
 											maw={240}
