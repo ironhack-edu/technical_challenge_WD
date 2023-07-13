@@ -13,7 +13,6 @@ router.get('/phones', (req, res, next) => {
 router.get('/phones/:id', (req, res, next) => {
   const phoneId = req.params.id;
   const phone = phones.filter(p => p.id == phoneId)[0]; // in fake data, the id is of type Number but params in req are received as String values
-  console.log(phones)
   res.json(phone);
 });
 
