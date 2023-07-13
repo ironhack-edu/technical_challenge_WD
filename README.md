@@ -1,3 +1,46 @@
+
+## what happened here
+
+-I read and understood the task. I started confident becaus I notice I have done this a couple of times already, during the bootcamp. I might be alright. 
+
+-I forked and cloned the repo on my VSC
+
+-I noticed the repo missed the most basic files we have been receiving as a starting point during the bootcamp so I started thinking about what to install and how to start creating the necessary structure. 
+
+-I run npm install but it didnt install dependencies.
+
+- I try to find how to install node, express, react separately. The terminal gives me errors. not working. cant find the install npm ??
+
+-I started looking for the basic npx ironlauncher in the students' portal in order to set up the files that way? 
+
+-I realized that as soon as I run the ironlaucher, it creates another directory within the cloned directory adn its a "server". I assumed this is not going to work but now I have another doubt... do they want me to create two repos (client/server)? Nah. No. it cant be.
+
+-after 1 hour of back and forth with this. I started searching on the internet how to install express, node and react on the internet. 
+for some reason, the terminal kept on giving me errors.
+
+-I tried copy pasting some content from the original clone into a newly created directory in order to pass the json conten to another directory and work there. It didnt work.
+
+-I checked the video solution to the challenge, as provided in the exercise: They still dont explain how to install so that my directory has the same files and installations in package.json. 
+
+- I managed to install express and node but, for some reason, everything installs in the package-lock.json, instead of in the package.json file. nto going to work, I guess. I try installing react. create-react-app .... but wait a minute, this also creates another directory inside the given directory. 
+
+-I ended up deleting the cloned directory from my computer with the intention of starting again from scratch, only to be reminded that, of course I cant fork more than once from my own account.
+
+-I created this new account on Github (seriously?!), only to fork again and start clean. 
+
+-I started this whole process at 10. 
+
+I quitted, utterly frustrated, at 13.25. Coded nothing. I couldnt even set up the Directory to start the job.
+
+This is ridiculous. I am not ready for the job market. I am ready to start the bootcamp all over again.
+
+
+
+
+
+
+
+
 # The Phone Cave (WD)
 
   At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
