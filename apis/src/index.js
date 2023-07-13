@@ -1,11 +1,18 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send("Hello from Express!")
-});
+const phones = require('../../data/phones.json');
+
+const port = 3000;
+const baseUrl = 'http://localhost:' + port;
 
 
-app.listen(3000, () => {
-    console.log('Listening on http://localhost:3000/')
+app.get('/', (_, res) => res.redirect(301, baseUrl + '/phones'));
+
+app.get('/phones', (_, res) =>  res.json(phones));
+
+app.get('/phones/:id', (req, res) => res.json(phones.find(p => p.id == req.params.id)));
+
+app.listen(port, () => {
+    console.log('Listening on ' + baseUrl)
 });
