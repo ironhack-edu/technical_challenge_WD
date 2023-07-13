@@ -1,8 +1,9 @@
-This is the client of The Phone Cave, which was built with React.
+This is the server of The Phone Cave, the REST API using Express and Axios
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with Ironlauncher
+
+This project was initiated with [ironlauncher](https://www.npmjs.com/package/ironlauncher)
 
 ## Available Scripts
 
@@ -12,13 +13,22 @@ In the project directory, you can run:
 
 To install all dependencies
 
-### `npm start`
+If the `package.json` doesnt update dependencies after install run the below:
+`npm i bcrypt@5.1.0 connect-mongo@5.0.0 cookie-parser@1.4.6 dotenv@16.1.4 express@4.18.2 express-session@1.17.3 hbs@4.2.0 mongoose@7.2.2 morgan@1.10.0 serve-favicon@2.5.0`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+then this:
+
+`npm i --save-dev nodemon@2.0.22`
+
+
+
+### `npm run dev`
+
+Runs the app in the sever and run the client with `npm start`
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
 
 ### `npm test`
 
