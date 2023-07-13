@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
+import PhonesListPage from "./pages/PhonesListPage";
 
 function App() {
   return (
@@ -26,6 +27,16 @@ function App() {
             </IsPrivate>
           }
         />
+
+        <Route
+          path="/phones"
+          element={
+            <IsPrivate>
+              <PhonesListPage />
+            </IsPrivate>
+          }
+        />
+
 
         <Route
           path="/signup"

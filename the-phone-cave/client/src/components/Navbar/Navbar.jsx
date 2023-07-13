@@ -16,26 +16,26 @@ function Navbar() {
 
       {isLoggedIn && (
         <>
-          <button onClick={logOutUser}>Logout</button>
+          <button onClick={logOutUser}>Logout</button>  
 
           <Link to="/profile">
             <button>Profile</button>
-            {/* <img src="https://picsum.photos/id/402/200/300" style={{ width: 50, height: 50, borderRadius: 25}} alt="profile" /> */}
+          </Link>
+          <Link to="/phones">
+            <button>All Phones</button>
           </Link>
 
-          <span>{user && user.name}</span>
+          <span>Hello {user && user.name}</span>
         </>
       )}
 
       {!isLoggedIn && (
         <>
           <Link to="/signup">
-            {" "}
-            <button>Sign Up</button>{" "}
+            <button>Sign Up</button>
           </Link>
           <Link to="/login">
-            {" "}
-            <button>Login</button>{" "}
+            <button>Login</button>
           </Link>
         </>
       )}
