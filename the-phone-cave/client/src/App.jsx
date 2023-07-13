@@ -6,15 +6,17 @@ import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 
-import Navbar from "./components/Navbar/Navbar";
+import AppNavbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
-import PhonesListPage from "./pages/PhonesListPage";
+import PhonesListPage from "./pages/PhonesListPage/PhonesListPage";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <div className="App d-flex flex-column min-vh-100">
+      <header className="App-header">
+        <AppNavbar />
+      </header>
 
       <Routes>
         <Route path="/" element={<HomePage />} />

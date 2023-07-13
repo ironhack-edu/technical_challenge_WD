@@ -1,10 +1,10 @@
 import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
-import { AuthContext } from "../../src/context/auth.context";
+import { AuthContext } from "../../context/auth.context";
 
 
-import PhoneCard from '../components/PhoneCard';
-import Loading from '../components/Loading/Loading';
+import PhoneCard from '../../components/PhoneCard/PhoneCard';
+import Loading from '../../components/Loading/Loading';
 
 const API_URL = 'http://localhost:5005';
 
@@ -31,7 +31,7 @@ if (isLoading) {
 
   return (
     <div className="PhonesListPage">
-      {phones.length} phones in the database
+      <h4>{phones.length} phones in the database</h4>
       {phones.map((phone) => {
         return <PhoneCard key={phone.id} phone={phone} />;
       })}

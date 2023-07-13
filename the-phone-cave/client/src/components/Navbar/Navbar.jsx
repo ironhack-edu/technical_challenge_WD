@@ -1,46 +1,98 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth.context";
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
-function Navbar() {
+
+
+function AppNavbar() {
   // Subscribe to the AuthContext to gain access to
   // the values from AuthContext.Provider's `value` prop
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
   return (
-    <nav>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
+    <Navbar
+        collapseOnSelect
+        expanded={false}      
+        expand="lg"
+        style={{
+          backgroundColor: '#ffdf38',
+        }}
+      >
+        <Container>
+          <Navbar.Brand
+            className="navbar-link-hover"
+            as={NavLink}
+            style={{
+              fontSize: '1.2em',
+              fontWeight: 'bold',
+            }}
+            to="/"
+          >
+            The Phone Cave
+          </Navbar.Brand>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav>
+              {isLoggedIn && (
+                <>
+                  <Nav.Link
+                    className="navbar-link-hover"
+                    as={NavLink}
+                    to="/phones"
+                  >
+                    All Phones
+                  </Nav.Link>
+                </>
+              )}
+            </Nav>
+            {isLoggedIn ? (
+              <Nav>
+                <Nav.Link
+                  className="navbar-link-hover"
+                  as={NavLink}
+                  to="/profile"
+                >
+                  Profile
+                </Nav.Link >
+                <Nav.Link
+                  disabled
+                  style={{
+                    color: "white",
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}>Hello {user && user.name}
+                </Nav.Link>
+                <Nav.Link
+                  className="navbar-link-hover"
+                  onClick={logOutUser}
+                >
+                  Logout
+                </Nav.Link>
+              </Nav>
+            ) : (
+              <Nav>
+                <Nav.Link
+                  className="navbar-link-hover"
+                  as={NavLink}
+                  to="/signup"
+                >
+                  Sign Up
+                </Nav.Link>
+                <Nav.Link
+                  className="navbar-link-hover"
+                  as={NavLink}
+                  to="/login"
+                >
+                  Login
+                </Nav.Link>
+              </Nav>
+            )}
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+);
 
-      {isLoggedIn && (
-        <>
-          <button onClick={logOutUser}>Logout</button>  
-
-          <Link to="/profile">
-            <button>Profile</button>
-          </Link>
-          <Link to="/phones">
-            <button>All Phones</button>
-          </Link>
-
-          <span>Hello {user && user.name}</span>
-        </>
-      )}
-
-      {!isLoggedIn && (
-        <>
-          <Link to="/signup">
-            <button>Sign Up</button>
-          </Link>
-          <Link to="/login">
-            <button>Login</button>
-          </Link>
-        </>
-      )}
-    </nav>
-  );
 }
 
-export default Navbar;
+export default AppNavbar;

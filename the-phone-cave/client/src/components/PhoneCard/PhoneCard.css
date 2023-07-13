@@ -1,0 +1,14 @@
+.phone-card {
+  width: 50rem;
+  height: 70vh;
+}
+
+.phone-image {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+.phone-card .card-body {
+  overflow: auto;
+}

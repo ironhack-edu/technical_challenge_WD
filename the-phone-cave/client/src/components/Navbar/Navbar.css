@@ -1,0 +1,14 @@
+.navbar-link-hover.active {
+  background-color: #8a7e641f;
+}
+.navbar-link-hover {
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.navbar-link-hover:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #f5b428;
+  transform: translateY(-3px);
+}
