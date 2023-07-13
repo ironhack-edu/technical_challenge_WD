@@ -2,21 +2,55 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Phone list */
+#phones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-img {
-  max-width: 500px;
-}
+/* Phone Details */
 
 #phone-details {
   display: flex;
-  flex-wrap: wrap
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 500px;
+}
+
+#phone-details img {
+  height: 500px;
 }
 
 #phone-characteristics {
+  /* width: 50%; */
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 50%;
+  align-items: center;
 }
+
+#phone-characteristics span {
+  text-align: justify;
+}
+
+#phone-characteristics label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+

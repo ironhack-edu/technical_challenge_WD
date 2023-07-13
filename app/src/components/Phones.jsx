@@ -18,15 +18,16 @@ export default function Phones() {
 
   return (
     <div>
-      <section>
-        <h1>Available phones</h1>
-        { !phones && <p>Loading...</p>}
-        { phones && <ul>
-          {phones.map(p => <li key={p.id}><a href={`/phones/${p.id}`} onClick={(e) => displayPhoneDetails(e, p.id)}>{p.manufacturer} {p.name}</a></li>)}
-          </ul>
-        }
+      <div id="phones">
+        <>
+          { !phones && <p>Loading...</p>}
+          { phones && <ul>
+            {phones.map(p => <li key={p.id}><a href={`/phones/${p.id}`} onClick={(e) => displayPhoneDetails(e, p.id)}>{p.manufacturer} {p.name}</a></li>)}
+            </ul>
+          }
 
-      </section>
+        </>
+      </div>
       <PhonesDetails id={selectedPhone} />
     </div>
   )

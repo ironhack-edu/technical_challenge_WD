@@ -5,29 +5,41 @@ import { number } from 'prop-types';
 export default function PhonesDetails({ id }) {
   const [phone, setPhone] = useState(null);
   useEffect(() =>{
-    backendApi.get('/phones/' + id)
-      .then(response => setPhone(response.data))
-      .catch(console.error);
+    setPhone(null);
+    setTimeout(() => {
+      backendApi.get('/phones/' + id)
+        .then(response => setPhone(response.data))
+        .catch(console.error);
+    }, 1000)
   }, [id])
 
   return (
-    <section>
-      {!phone && <p>Please, select a phone to display it&lsquo;s details...</p>}
-      {phone && <div id="phone-details">
+    <div id="phone-details">
+      {id ===null && <h2>Please, select a phone to get details...</h2>}
+      {id !== null && phone === null && <div><h2>Loading...</h2></div>}
+      {id !== null && phone !== null && <>
           <div><img src={`/images/${phone.imageFileName}`} /></div>
           <div id="phone-characteristics">
-            <p>Manufacturer: {phone.manufacturer}</p>
-            <p>Model: {phone.name}</p>
-            <p>Description:<br/> {phone.description}</p>
-            <p>Color: {phone.color}</p>
-            <p>Price: {phone.price} €</p>
-            <p>Screen: {phone.screen}</p>
-            <p>Processor: {phone.processor}</p>
-            <p>Ram: {phone.ram} GB</p>
+            <label>Model</label>
+            <span> {phone.name}</span>
+            <label>Manufacturer</label>
+            <span> {phone.manufacturer}</span>
+            <label>Description</label>
+            <span> {phone.description}</span>
+            <label>Color</label>
+            <span> {phone.color}</span>
+            <label>Price</label>
+            <span> {phone.price} €</span>
+            <label>Screen</label>
+            <span> {phone.screen}</span>
+            <label>Processor</label>
+            <span> {phone.processor}</span>
+            <label>Ram</label>
+            <span> {phone.ram} GB</span>
           </div>  
-      </div>
+      </>
       }
-    </section>
+    </div>
   )
 }
 
