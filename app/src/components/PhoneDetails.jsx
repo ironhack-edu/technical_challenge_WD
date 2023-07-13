@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import backendApi from '../services/backendApi';
 import { number } from 'prop-types';
+import Spinner from './Spinner';
 
 export default function PhonesDetails({ id }) {
   const [phone, setPhone] = useState(null);
@@ -10,13 +11,13 @@ export default function PhonesDetails({ id }) {
       backendApi.get('/phones/' + id)
         .then(response => setPhone(response.data))
         .catch(console.error);
-    }, 1000)
+    }, 1000);
   }, [id])
 
   return (
     <div id="phone-details">
       {id ===null && <h2>Please, select a phone to get details...</h2>}
-      {id !== null && phone === null && <div><h2>Loading...</h2></div>}
+      {id !== null && phone === null && <Spinner />}
       {id !== null && phone !== null && <>
           <div><img src={`/images/${phone.imageFileName}`} /></div>
           <div id="phone-characteristics">
