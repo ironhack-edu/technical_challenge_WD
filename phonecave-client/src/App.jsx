@@ -6,15 +6,18 @@ import {
 	Button,
 	Container,
 	Flex,
+	Group,
 	Image,
 	Loader,
-	Popover,
 	Text,
+	Box,
+	Collapse,
 } from '@mantine/core';
 
 function App() {
 	const [phones, setPhones] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const [openedIndex, setOpenedIndex] = useState(null);
 
 	useEffect(() => {
 		const getPhones = async () => {
@@ -26,10 +29,7 @@ function App() {
 				setLoading(false);
 			} catch (error) {
 				console.error('Error getting list of phones:', error);
-			} /* finally {
-				setLoading(false);
-				console.log(loading);
-			} */
+			}
 		};
 
 		getPhones();
@@ -42,29 +42,22 @@ function App() {
 			{loading === true && <Loader />}
 
 			{phones && (
-				<Flex
-					mih={50}
-					gap="md"
-					justify="center"
-					/* align="center" */
-					direction="row"
-					wrap="wrap"
-				>
+				<Flex mih={50} gap="md" justify="center" direction="row" wrap="wrap">
 					<section>
-						{phones.map((phone) => (
-							<Popover
-								m={'sm'}
-								key={phone.id}
-								width={200}
-								position="bottom"
-								withArrow
-								shadow="md"
-							>
-								<Popover.Target>
-									<Button>{phone.name}</Button>
-								</Popover.Target>
-								<Popover.Dropdown>
-									<Text size="sm">
+						{phones.map((phone, index) => (
+							<Box maw={400} mx="auto" key={phone.id}>
+								<Group position="center" mb={5}>
+									<Button
+										onClick={() =>
+											setOpenedIndex(openedIndex === index ? null : index)
+										}
+									>
+										{phone.name}
+									</Button>
+								</Group>
+
+								<Collapse in={openedIndex === index}>
+									<Text>
 										<Image
 											maw={240}
 											mx="auto"
@@ -82,8 +75,8 @@ function App() {
 										<p>Processor: {phone.processor}</p>
 										<p>Ram: {phone.ram}</p>
 									</Text>
-								</Popover.Dropdown>
-							</Popover>
+								</Collapse>
+							</Box>
 						))}
 					</section>
 				</Flex>
