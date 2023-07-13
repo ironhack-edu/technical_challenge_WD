@@ -22,7 +22,9 @@ function PhoneDetails({ phone, isPhoneLoading }) {
     <h2>Phone Details</h2>
     { !isPhoneLoading 
       ? <>
-        <img src={"../assets/images/" + phone.imageFileName} alt={phone.name} />
+        <div className="image-wrapper">
+          <img src={"../assets/images/" + phone.imageFileName} alt={phone.name} />
+        </div>
         <p>Name: <span>{phone.name}</span></p>
         <p>Manufacturer: <span>{phone.manufacturer}</span></p>
         <p>Description: <span>{phone.description}</span></p>
@@ -33,7 +35,7 @@ function PhoneDetails({ phone, isPhoneLoading }) {
         <p>Ram: <span>{phone.ram}</span></p>
       </>
       : <>
-        <p>Loading...</p>
+        <p style={{fontWeight: "normal"}}>Loading...</p>
         <SyncLoader
           color={"#bada55"}
           size={10}

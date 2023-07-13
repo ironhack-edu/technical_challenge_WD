@@ -58,7 +58,7 @@ function HomePage() {
 
   return <div className="HomePage">
     <PhonesList phones={phones} callbackSetPhone={callbackSetPhone} />
-    <hr />
+    {/* <hr /> */}
     {
       // conditional rendering using short-circuit evaluation
       // with logical AND (returns first falsy operand, last otherwise)

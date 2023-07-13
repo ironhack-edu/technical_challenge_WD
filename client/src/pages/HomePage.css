@@ -1,0 +1,19 @@
+.PhoneDetails p {
+  font-weight: bold;
+}
+
+.PhoneDetails p span {
+  font-weight: normal;
+}
+
+.PhoneDetails img {
+  height: 300px;
+}
+
+h2 {
+  background-color: #bada55;
+}
+
+.PhonesList h2 {
+  margin-top: 0;
+}
