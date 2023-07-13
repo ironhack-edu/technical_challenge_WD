@@ -27,6 +27,7 @@ for some reason, the terminal kept on giving me errors.
 -I ended up deleting the cloned directory from my computer with the intention of starting again from scratch, only to be reminded that, of course I cant fork more than once from my own account.
 
 -I created this new account on Github (seriously?!), only to fork again and start clean. 
+- when pushing I noticed that , of course, my git is not connected to this new github account so I cant push so I retrieved this directory from the bin (!)
 
 -I started this whole process at 10. 
 
