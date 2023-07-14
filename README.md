@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="200" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXFocHlsZHZ1cjZuY3V0bW40MnoxNGozZXVxMXFmNHhkOHpnc3d5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/i0XXGrH7zgw6TEH2kF/giphy.gif" alt="App functionality gif">
+</p>
+
 # Technical Challenge WD
 
 This is a fullstack app that gets information from an API in the backend and displays it in a responsive and appealing way. This app was created as part of a 3-hour coding exercise.
