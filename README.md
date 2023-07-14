@@ -1,44 +1,37 @@
-# The Phone Cave (WD)
+<p align="center">
+  <img width="200" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXFocHlsZHZ1cjZuY3V0bW40MnoxNGozZXVxMXFmNHhkOHpnc3d5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/i0XXGrH7zgw6TEH2kF/giphy.gif" alt="App functionality gif">
+</p>
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+# Technical Challenge WD
 
-## The challenge (Duration: 3 hours)
+This is a fullstack app that gets information from an API in the backend and displays it in a responsive and appealing way. This app was created as part of a 3-hour coding exercise.
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+## Getting Started
 
-### Iteration #1
+To get started with this app, you'll need to clone this repository and install the dependencies:
 
-Create a REST API (NodeJS) server that meets the following requirements:
-
-
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
-
-
-### Iteration #2
-
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
-
-### Iteration #3
-
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
-
-Once done with this, do a pull request to submit your work. 
+```sh
+git clone https://github.com/your-username/technical-challenge-wd.git
+cd technical-challenge-wd
+npm install
+```
 
 
-## Deadline
+# Running the App
 
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
+This app has two folders: phonecave-client and phonecave-server. The client runs on http://localhost:5173/ and the server runs on http://localhost:3000/.
 
-## Must-have Deliverables
+To run the server, simply run:
+```
+npm start
+```
 
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
+This will start the server on http://localhost:3000.
+
+To run the client, simply run:
+
+```
+npm run dev
+```
+
+This will start the client on http://localhost:5173.
