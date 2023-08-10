@@ -1,0 +1,71 @@
+.phone-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .container {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .welcome-heading {
+    font-size: 36px;
+    color: #007bff;
+  }
+  
+  .phone-list-title {
+    font-size: 24px;
+    color:purple; 
+    margin-top: 10px;
+  }
+  
+  .phone-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .phone-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none; 
+    color: inherit;
+  }
+  
+  .phone-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .phone-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .phone-manufacturer,
+  .phone-color,
+  .phone-price {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .phone-cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .phone-card {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .phone-cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }

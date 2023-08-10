@@ -1,0 +1,60 @@
+.phone-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .phone-details-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:purple; 
+    text-align: center;
+  }
+  
+  .phone-details-content {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .phone-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .phone-manufacturer,
+  .phone-screen,
+  .phone-processor,
+  .phone-ram {
+    margin-bottom: 5px;
+  }
+  
+  .phone-description {
+    margin-top: 10px;
+  }
+
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  @media (max-width: 480px) {
+    .phone-name {
+      font-size: 18px;
+    }
+  
+    .phone-manufacturer,
+    .phone-screen,
+    .phone-processor,
+    .phone-ram,
+    .phone-description {
+      font-size: 12px;
+    }
+  
+    .phone-image {
+      max-width: 60%;
+    }
+  }

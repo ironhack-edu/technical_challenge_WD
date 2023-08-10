@@ -1,0 +1,25 @@
+# Combined .gitignore for Frontend and Backend
+
+# Frontend dependencies and build artifacts
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/coverage
+/frontend/build
+
+# Backend dependencies and build artifacts
+/backend/node_modules
+/backend/npm-debug.log
+/backend/.env
+
+# Misc files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+*.lnk
+
+# VS Code settings
+.vscode/*
