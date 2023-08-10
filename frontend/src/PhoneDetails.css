@@ -33,4 +33,28 @@
   .phone-description {
     margin-top: 10px;
   }
+
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  @media (max-width: 480px) {
+    .phone-name {
+      font-size: 18px;
+    }
   
+    .phone-manufacturer,
+    .phone-screen,
+    .phone-processor,
+    .phone-ram,
+    .phone-description {
+      font-size: 12px;
+    }
+  
+    .phone-image {
+      max-width: 60%;
+    }
+  }

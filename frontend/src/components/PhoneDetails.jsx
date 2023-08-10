@@ -2,23 +2,34 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom'; 
 import "../PhoneDetails.css"
+import { ClipLoader } from 'react-spinners';
 
 const PhoneDetails = () => {
   const { id } = useParams();
   const [phone, setPhone] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios.get(`http://localhost:5005/phones/${id}`)
       .then(response => {
         setPhone(response.data);
+        setLoading(false);
       })
       .catch(error => {
         console.error('Error fetching phone details:', error);
       });
   }, [id]);
 
+  if (loading) {
+    return (
+      <div className="spinner">
+        <ClipLoader size={50} color="#3498db" loading={loading} />
+      </div>
+    );
+  }
+
   if (!phone) {
-    return <div>Loading...</div>;
+    return <div>Error fetching phone details...</div>;
   }
 
   return (

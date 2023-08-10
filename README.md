@@ -31,6 +31,47 @@ Make it look **eye-appealing**. There is no need to develop a sophisticated desi
 
 Once done with this, do a pull request to submit your work. 
 
+# PhoneCave - Full Stack Phone Catalog App
+
+PhoneCave is a full stack web application that allows users to browse and view details of various mobile phones. It consists of both a frontend built with React and a backend built with Node.js and Express.
+
+## Features
+
+- Browse a list of mobile phones with their names, manufacturers, colors, and prices.
+- Click on a phone card to view detailed information about the phone.
+- Responsive design to provide a seamless experience across different devices.
+
+## Technologies Used
+
+- Frontend: React, Axios, React Router, React Spinners
+- Backend: Node.js, Express
+
+## Installation
+
+1. Clone the repository to your local machine.
+2. Navigate to the `frontend` folder and run `npm install` to install frontend dependencies.
+3. Navigate to the `backend` folder and run `npm install` to install backend dependencies.
+
+## Usage
+
+1. Start the backend server:
+   - Navigate to the `backend` folder.
+   - Run `npm start` to start the backend server on `http://localhost:5005`.
+
+2. Start the frontend application:
+   - Navigate to the `frontend` folder.
+   - Run `npm start` to start the frontend application on `http://localhost:3000`.
+
+3. Open your web browser and go to `http://localhost:3000` to use the PhoneCave app.
+4. Browse the list of phones, click on a phone card to view its details, and enjoy exploring the catalog.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit pull requests or raise issues.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Deadline
 

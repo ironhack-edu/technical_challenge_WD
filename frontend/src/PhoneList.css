@@ -54,3 +54,18 @@
     margin-bottom: 5px;
   }
   
+  @media (max-width: 768px) {
+    .phone-cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .phone-card {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .phone-cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
