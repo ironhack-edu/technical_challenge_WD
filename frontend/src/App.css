@@ -1,0 +1,54 @@
+/* General App styling */
+.App {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+/* Styling for the list of phones */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  text-align: left;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #eaeaea;
+}
+
+/* Styling for the phone detail view */
+div {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.phone-image {
+  width: 150px;      /* or whatever width you want */
+  height: 250px;     /* or whatever height you want */
+  object-fit: cover; /* This will ensure the images cover the set width/height without distortion */
+  display: block;    /* This makes margin auto work to center the image if it's inside a flex or grid container */
+  margin: 0 auto;    /* This centers the image horizontally */
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+  .App {
+    margin: 5px;
+  }
+
+  li, div {
+    font-size: 14px;
+  }
+
+  img {
+    width: 150px;
+  }
+}
