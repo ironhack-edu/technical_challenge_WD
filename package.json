@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^1.4.0",
+    "create-react-app": "^5.0.1",
+    "ironlauncher": "^0.39.0",
+    "react-router-dom": "^6.15.0"
+  }
+}
