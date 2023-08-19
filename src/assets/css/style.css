@@ -1,0 +1,25 @@
+@import 'grid.css';
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header {
+    padding: 1rem;
+}
+
+main .chakra-card {
+    max-width: none;
+}
+
+h2 {
+    margin-top: var(--card-padding);
+    margin-bottom: calc(var(--card-padding) / 2);
+}
+
+main button {
+    margin-top: var(--card-padding);
+    width: 100%;
+}
