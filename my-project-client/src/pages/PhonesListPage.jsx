@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { css } from "@emotion/react";
+import { ClipLoader } from "react-spinners";
+
+const override = css`
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+`;
 
 export default function PhonesListPage() {
     const [phones, setPhones] = useState([]);
@@ -25,7 +33,16 @@ export default function PhonesListPage() {
     }, []);
 
     if (loading) {
-        return <p>Loading</p>;
+        return (
+            <div className="flex justify-center items-center min-h-screen p-2">
+                <ClipLoader
+                    css={override}
+                    size={50}
+                    color={"#FF0000"}
+                    loading={loading}
+                />
+            </div>
+        );
     }
 
     if (error) {
