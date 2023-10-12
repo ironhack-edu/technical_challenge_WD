@@ -4,8 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import AppNavbar from './components/AppNavbar';
 import PhoneDetailsPage from './pages/PhoneDetailsPage';
 import PhonesListPage from './pages/PhonesListPage';
-// import ErrorPage from './pages/ErrorPage';
-// import NotFoundPage from './pages/NotFoundPage';
+import ErrorPage from './pages/ErrorPage';
+import NotFoundPage from './pages/NotFoundPage';
 import HomePage from './pages/HomePage';
 
 
@@ -23,8 +23,8 @@ function App() {
             <Route path="/phones" element={<PhonesListPage />} />
             <Route path="/phones/:phoneId" element={<PhoneDetailsPage />} />
 
-            {/* <Route path="/error" element={<ErrorPage />} />
-            <Route path="/*" element={<NotFoundPage />} /> */}
+            <Route path="/error" element={<ErrorPage />} />
+            <Route path="/*" element={<NotFoundPage />} />
 
           </Routes>
         </div>

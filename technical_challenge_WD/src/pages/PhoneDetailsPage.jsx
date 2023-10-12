@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import PhoneCard from "../components/PhoneCard";
 import { useParams, Link } from "react-router-dom";
+import Spinner from "../components/Spinner";
 
 const API_URL = "http://localhost:5005/api";
 
@@ -23,7 +24,8 @@ function PhoneDetailsPage({ phone }) {
     return (
         <div className="ContainerDetails">
             {loading ? (
-                <p>Loading...</p>
+                // <p>Loading...</p>
+                <Spinner />
             ) : (
                 <PhoneCard phone={phoneDetails} /> 
             )}
