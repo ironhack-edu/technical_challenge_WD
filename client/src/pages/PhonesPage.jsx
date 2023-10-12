@@ -7,13 +7,14 @@ const API_URL = "http://localhost:5005/api";
 function PhonesPage() {
 
     const [phones, setPhones] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const handleFetch = () => {
         axios
             .get(`${API_URL}/phones`)
             .then((response) => {
-                console.log(response.data);
                 setPhones(response.data);
+                setLoading(false)
             })
             .catch((error) => console.log(error))
     }
@@ -24,13 +25,15 @@ function PhonesPage() {
 
     return (
         <div className="phones-container">
-            <div className="phone-list">
+            {loading && <p>Fetching phones</p>}
+            {!loading &&
+                <div className="phone-list">
+                    {phones.map((phone) => (
+                        <PhoneCard phone={phone} />
+                    ))}
 
-                {phones.map((phone) => (
-                    <PhoneCard phone={phone} />
-                ))}
-
-            </div>
+                </div>
+            }
         </div>
     )
 }

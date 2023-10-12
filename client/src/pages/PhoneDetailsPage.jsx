@@ -34,10 +34,10 @@ function PhoneDetailsPage({ phone }) {
             {
                 !loading &&
                 <div className="phone-details">
-                    <div>
-                        <img src={phoneDetails.imageFileName} alt={phoneDetails.name} />
-                    </div>
                     <div className="phone-description ">
+                        <div>
+                            <img src={`/assets/images/${phoneDetails.imageFileName}`} alt={phoneDetails.name} />
+                        </div>
                         <h2>{phoneDetails.name}</h2>
                         <p>{phoneDetails.description}</p>
                         <p>Screen: {phoneDetails.screen}</p>

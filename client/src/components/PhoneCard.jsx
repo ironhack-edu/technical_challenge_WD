@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function PhoneCard({ phone }) {
     return (
         <Card key={phone.id} style={{ width: '16rem', textAlign: "center", boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}>
-            <Card.Img className="phone-card-img " variant="top" src={phone.imageFileName} />
+            <Card.Img className="phone-card-img " variant="top" src={`/assets/images/${phone.imageFileName}`} />
             <Card.Body>
                 <Card.Title>{phone.name}</Card.Title>
                 <Card.Text>
