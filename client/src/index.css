@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding:0;
+}
+
+.phones-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+
+.phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap:3em;
+  justify-content: center;
+}
+
+.phone-details-container {
+  padding: 3em;
+}
+
+.phone-details{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.phone-details img{
+width:80%
+}
