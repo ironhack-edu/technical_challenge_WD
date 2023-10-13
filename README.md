@@ -1,44 +1,42 @@
 # The Phone Cave (WD)
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+The Phone Cave is a simple web application that allows you to browse a catalog of smartphones and view details about individual phones. It's built with React for the front end and Node.js for the back end.
 
-## The challenge (Duration: 3 hours)
+## Getting Started
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+To get started with the Phone Catalog App, follow these steps:
 
-### Iteration #1
+### Prerequisites
 
-Create a REST API (NodeJS) server that meets the following requirements:
+Before you begin, make sure you have the following software installed on your system:
 
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+### Installation
 
+1. Clone the repository:
 
-### Iteration #2
+   ```bash
+   git clone https://github.com/your-username/phone-catalog-app.git
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
+   ```
 
-### Iteration #3
+2. Navigate to the client directory: cd phone-catalog-app/client
 
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
+3. Install the client dependencies: npm install
+4. Navigate to the server directory: cd ../server
+5. Install the server dependencies: npm install
 
-Once done with this, do a pull request to submit your work. 
+### Running the App:
 
+1. Start the server: npm start
+2. Start the client:
+   cd ../client
+   npm start
 
-## Deadline
+The app should now be running locally. You can access it in your web browser at http://localhost:3000.
 
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
+## Usage
 
-## Must-have Deliverables
-
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
+Browse the list of available phones on the home page.
+Click on a phone to view its details.

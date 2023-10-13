@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom";
+import React from "react";
+
+function PhoneCard({ phone }) {
+  return (
+    <div className="phone-card">
+      <div key={phone.id} className="phone-info">
+        <img src={phone.imageFileName} />
+        <p>{phone.name}</p>
+        <p>Manufacturer: {phone.manufacturer}</p>
+        <p>Color: {phone.color}</p>
+        <p>Price: {phone.price} Euro</p>
+      </div>
+      <Link to={`/phones/${phone.id}`}>
+        <button>View phone Details</button>
+      </Link>
+    </div>
+  );
+}
+
+export default PhoneCard;
