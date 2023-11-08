@@ -1,10 +1,21 @@
 const router = require('express').Router();
-const phonesJson = require('../data/phones.json');
+const data = require('../data/phones.json');
 
-// GET "/api/phones" to send all phones data in the json
+router.get('/phones', (req, res, next) => {
+  if (!data) {
+    res.status(404).json('Not found!');
+  }
+  res.status(200).json(data);
+});
 
-router.get('/', (req, res, next) => {
-  res.json(phones.Json);
+router.get('/phones/:phoneId', (req, res, next) => {
+  const { phoneId } = req.params;
+  const findPhone = data.find((phones) => phones.id === phoneId);
+
+  if (findPhone) {
+    res.status(200).json(findPhone);
+  }
+  res.status(404).json({ message: 'Not found!' });
 });
 
 module.exports = router;
