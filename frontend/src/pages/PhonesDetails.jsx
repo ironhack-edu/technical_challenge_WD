@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import ColorSchemesExample from '../components/Navbar';
+import BorderExample from '../components/BorderExample';
 
 let api_url = 'http://localhost:5005/api/phones';
 
@@ -25,16 +27,23 @@ function PhonesDetails() {
 
   return (
     <div style={{ textAlign: 'center' }}>
+      <ColorSchemesExample />
       <h1>Phone Details</h1>
-      <img src={`${process.env.PUBLIC_URL}/images/${phoneDetails.imageFileName}`} style={{ width: '250px', height: 'auto' }} alt='phone' />
-      <ul style={{ width: '50%', margin: '0 auto', listStyle: 'none' }}>
-        <li>{phoneDetails.name}</li>
-        <li>{phoneDetails.description}</li>
-        <li>{phoneDetails.manufacturer}</li>
-        <li>{phoneDetails.price}</li>
-        <li>{phoneDetails.processor}</li>
-        <li>{phoneDetails.ram}</li>
-      </ul>
+      {phoneDetails.imageFileName ? (
+        <>
+          <img src={`${process.env.PUBLIC_URL}/images/${phoneDetails.imageFileName}`} alt='phone' style={{ width: '250px', height: 'auto' }} />
+          <ul style={{ width: '50%', margin: '0 auto', listStyle: 'none' }}>
+            <li>{phoneDetails.name}</li>
+            <li>{phoneDetails.description}</li>
+            <li>{phoneDetails.manufacturer}</li>
+            <li>{phoneDetails.price}</li>
+            <li>{phoneDetails.processor}</li>
+            <li>{phoneDetails.ram}</li>
+          </ul>
+        </>
+      ) : (
+        <BorderExample />
+      )}
     </div>
   );
 }

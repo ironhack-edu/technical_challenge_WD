@@ -7,11 +7,9 @@ import PhonesDetails from './pages/PhonesDetails';
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
-      <ColorSchemesExample />
       <Routes>
+        <Route path='/' element={<ColorSchemesExample />} />
         <Route path='/phones/:phoneId' element={<PhonesDetails />}></Route>
-
         <Route></Route>
       </Routes>
     </div>
