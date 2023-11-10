@@ -8,6 +8,7 @@ import {
   Group,
 } from "@mantine/core";
 import { useState } from "react";
+import { Link } from "react-router-dom"
 
 function PhoneCard({phoneData}) {
   const [phone, setPhone] = useState(phoneData)
@@ -32,10 +33,11 @@ function PhoneCard({phoneData}) {
         <Text size="sm" c="dimmed">
             Brand: {phone.manufacturer}
         </Text>
-
-        <Button variant="light" color="blue" fullWidth mt="md" radius="md">
-          More details
-        </Button>
+        <Link to={`/${phone.id}`}>
+            <Button variant="light" color="blue" fullWidth mt="md" radius="md">
+            More details
+            </Button>
+        </Link>
       </Card>
   );
 }
