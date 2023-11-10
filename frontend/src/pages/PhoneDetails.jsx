@@ -45,8 +45,12 @@ const PhoneDetails = () => {
               alt={`Image of ${phone.name}`}
             />
             <p>{phone.description}</p>
-            {/* Add more details as needed */}
-            <Link to="/">Back to Phone List</Link>
+            <p>Manufacturer: {phone.manufacturer}</p>
+            <p>Screen: {phone.screen}</p>
+            <p>Processor: {phone.processor}</p>
+            <p>Ram: {phone.ram} GB</p>
+            <p>Price € {phone.price}</p>
+            <button onClick={() => window.history.back()}>Back</button>
           </div>
         )}
       </div>
