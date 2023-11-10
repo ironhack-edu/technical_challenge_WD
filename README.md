@@ -1,8 +1,6 @@
-# The Phone Cave App
-
 # Overview
 
-This project was part of a technical challenge to assess skills in building a full-stack web application. The challenge involved creating a React application that interacts with a NodeJS server, serving as a REST API. The goal was to build a responsive and visually appealing catalog for a fictional phone store with a time limit of 3 hours.
+This project was part of a technical challenge to assess skills in building a full-stack web application. The challenge involved creating a React application that interacts with a NodeJS server, serving as a REST API. The goal was to build a responsive and visually appealing catalog for a fictional phone store with a time limit of 3 hours!
 
 # Achievements
 
