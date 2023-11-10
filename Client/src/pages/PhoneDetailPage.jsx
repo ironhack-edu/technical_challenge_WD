@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function PhoneDetailsPage() {
   const [phone, setPhone] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { Id } = useParams();
+  const navigate = useNavigate();
 
   const imagePath = `/images/${phone.imageFileName}`;
 
@@ -54,6 +55,18 @@ function PhoneDetailsPage() {
         <p>Processor: {phone.processor}</p>
         <p>Ram: {phone.ram}</p>
         <p>Price: ${phone.price}</p>
+        <button
+          style={{
+            padding: "1rem",
+            borderRadius: "12px",
+            boxShadow: "1px 2px 7px 2px black",
+          }}
+          onClick={() => {
+            navigate(`/phones`);
+          }}
+        >
+          Go back
+        </button>
       </div>
     </>
   );
