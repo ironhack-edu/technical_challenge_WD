@@ -3,9 +3,7 @@ const { Schema, model } = require("mongoose");
 // TODO: Please make sure you edit the User model to whatever makes sense in this case
 const phoneSchema = new Schema(
   {
-    id: {
-      type: Number,
-    },
+
     name: {
       type: String,
     },

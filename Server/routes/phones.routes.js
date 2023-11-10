@@ -21,12 +21,12 @@ console.log({error})
 
 router.get('/:phoneId', async (req, res) => {
   const { phoneId } = req.params
-  if (mongoose.isValidObjectId(phoneId)) {
+  console.log (phoneId)
     try {
-      const currentBook = await Phone.findById(phoneId)
-      if (currentBook) {
+      const currentPhone = await Phone.findById(phoneId)
+      if (currentPhone) {
         console.log(currentPhone)
-        res.json({ book: currentPhone })
+        res.json({ phone: currentPhone })
       } else {
         res.status(404).json({ message: 'Phone not found' })
       }
@@ -34,13 +34,7 @@ router.get('/:phoneId', async (req, res) => {
       console.log(error)
       res.status(400).json({ error })
     }
-  } else {
-    res.status(400).json({ message: 'The id seems wrong' })
-  }
-})
-
-router.use((req, res) => {
-  res.status(404).send('404 - Page Not Found');
-});
+  } 
+)
 
 module.exports = router
