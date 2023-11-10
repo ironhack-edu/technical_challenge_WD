@@ -16,10 +16,8 @@ const PhoneDetails = () => {
         return response.json();
       })
       .then((data) => {
-        setTimeout(() => {
-          setPhone(data);
-          setIsLoading(false);
-        }, 1200);
+        setPhone(data);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log(error);

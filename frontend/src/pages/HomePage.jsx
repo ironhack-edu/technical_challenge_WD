@@ -15,10 +15,8 @@ const HomePage = () => {
         return response.json();
       })
       .then((data) => {
-        setTimeout(() => {
-          setPhones(data);
-          setIsLoading(false);
-        }, 1200);
+        setPhones(data);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log(error);
