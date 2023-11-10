@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import {Loader} from "@mantine/core"
-import './App.css'
+import { Loader, Grid, GridCol} from "@mantine/core"
 import axios from "axios";
+import PhoneCard from './components/PhoneCard';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   const getAllPhones = () => {
     axios.get(`${import.meta.env.VITE_API_URL}/phones`)
     .then((response) => {
-      setPhones(response)
+      setPhones(response.data)
       setIsLoading(false)
     })
     .catch((error) => {
@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     getAllPhones()
   }, [])
-
+  console.log(phones)
   return  isLoading ? (
     <>
       <Loader color="#288BE2" />
@@ -30,6 +30,14 @@ function App() {
   ) : (
     <>
       <h1>The best phones:</h1>
+      <Grid gutter="lg" spacing="lg">
+          {phones && phones.map((phone) => {
+            return(
+              <GridCol key={phone.id} span={{ base: 12, xs: 4, md: 4, lg: 4 }}>
+                <PhoneCard phoneData={phone} /> 
+              </GridCol>
+            )})}
+      </Grid>
     </>
   )
 }
