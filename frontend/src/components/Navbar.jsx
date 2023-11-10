@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 let api_url = 'http://localhost:5005/api/phones';
 
@@ -23,11 +24,11 @@ function ColorSchemesExample() {
 
   return (
     <div>
-      <Navbar bg='dark' data-bs-theme='dark'>
+      <Navbar bg='primary' data-bs-theme='dark'>
         <Container style={{ textAlign: 'center' }}>
-          <Navbar.Brand href='#home' style={{ textDecoration: 'none' }}>
-            Phones
-          </Navbar.Brand>
+          <Link to='/'>
+            <Navbar.Brand style={{ textDecoration: 'none' }}>Phones</Navbar.Brand>
+          </Link>
           <Nav className='me-auto'>
             {phoneData.map((data) => (
               <Nav.Link href={`/phones/${data.id}`} key={data.id} style={{ textDecoration: 'none', marginRight: '10px' }}>
