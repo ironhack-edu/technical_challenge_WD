@@ -21,7 +21,7 @@ function Homepage() {
     useEffect(() => {
       getAllPhones()
     }, [])
-    console.log(phones)
+
     return  isLoading ? (
       <>
         <Loader color="#288BE2" />
