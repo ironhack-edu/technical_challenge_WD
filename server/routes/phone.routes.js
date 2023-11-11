@@ -12,12 +12,10 @@ router.get("/", (req, res) => {
 
 // GET '/phones:id' to send phone details data
 router.get("/:id", (req, res) => {
-  const { phoneId } = req.params;
-  const phone = phonesJSON.filter((phone) => {
-    phone.id === phoneId;
-  });
+  const { id } = req.params;
+  const phone = phonesJSON.find((phone) => phone.id === Number(id));
 
-  if (phone.length > 0) {
+  if (phone) {
     res.status(200).json(phone);
   } else {
     res.status(404).json("Not found");

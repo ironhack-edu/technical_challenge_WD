@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import phoneService from "../../services/phone.service";
-import PhoneCard from "./PhoneCard"
+import PhoneCard from "./PhoneCard";
+import ReactLoading from 'react-loading';
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +24,7 @@ function HomePage() {
     <div className="min-w-full p-6">
       {isLoading ? (
         <div className="w-full h-full flex justify-center items-center">
-          <p>Loading...</p>
+          <ReactLoading type={"spin"} color={'white'} height={667} width={375} />
         </div>
       ) : (
         <div>
@@ -37,9 +38,11 @@ function HomePage() {
           <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
             Here, you will find the perfect phone for you!
           </p>
-          {phones.map((phoneData) => {
-            return <PhoneCard {...phoneData} key={phoneData.id} />;
-          })}
+          <div className="flex flex-row flex-wrap justify-center mt-2">
+            {phones.map((phoneData) => {
+              return <PhoneCard {...phoneData} key={phoneData.id} />;
+            })}
+          </div>
         </div>
       )}
     </div>

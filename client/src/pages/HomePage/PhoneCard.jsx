@@ -5,12 +5,12 @@ function PhoneCard({ id, name, manufacturer, description, imageFileName }) {
   const navigate = useNavigate();
 
   return (
-    <div key={id}>
+    <div key={id} className="flex flex-1 min-w-0 m-2">
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="rounded-t-lg"
-            src={`/client\public\assets\images\${imageFileName}`}
+            src={`./assets/images/${imageFileName}`}
             alt={imageFileName}
           />
         </a>
@@ -20,7 +20,7 @@ function PhoneCard({ id, name, manufacturer, description, imageFileName }) {
               {name} {manufacturer}
             </h5>
           </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 text-sm text-gray-700 dark:text-gray-400">
             {description}
           </p>
           <a
