@@ -1,44 +1,49 @@
-# The Phone Cave (WD)
+# The Phone Cave App
+![Screen](image.png)
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+This application is a catalog display of our fantastic phones, turning our cave store into a virtual home. Below are the steps to set up and use the app.
 
-## The challenge (Duration: 3 hours)
+## Instructions
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+### Step 1: Set up the server
 
-### Iteration #1
+1. Open a terminal and navigate to the `server` directory.
+2. Install dependencies using the following command:
+   ```bash
+   npm install
+   ```
+3. Start the server with the following command:
+   ```bash
+   npm start
+   ```
 
-Create a REST API (NodeJS) server that meets the following requirements:
+Your server is now running!
 
+### Step 2: Set up the React App
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+1. Open another terminal and navigate to the `client` directory.
+2. Install dependencies using the following command:
+   ```bash
+   npm install
+   ```
+3. Start the React app with the following command:
+   ```bash
+   npm start
+   ```
 
+Your React app will be accessible at `http://localhost:3000`.
 
-### Iteration #2
+### Step 3: Explore the Phone Catalog
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
+1. Open your web browser and go to `http://localhost:3000`.
+2. You will see a list of phones retrieved from the server.
+3. Click on a phone model to view its detailed information.
 
-### Iteration #3
+### Step 4: Enjoy the Eye-Appealing Design
 
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
+The app is designed to be visually appealing. Images of each device have been added to enhance the user experience.
 
-Once done with this, do a pull request to submit your work. 
+## Additional Information
 
-
-## Deadline
-
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
-
-## Must-have Deliverables
-
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
+- The server is built with Node.
+- Challenge from `https://github.com/ironhack-edu/technical_challenge_WD/tree/master`
