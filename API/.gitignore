@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Server logs
+logs/
+*.log
+
+# Dependency directories
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables file
+.env
+
+# Build files
+build/
+dist/
+
+# Mac OS
+.DS_Store
+
+# React
+build/
+dist/
