@@ -1,0 +1,47 @@
+.column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 186, 24);
+  }
+  
+  .column li {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #d5d873;
+  }
+  
+  .column li:hover {
+    background-color: #d87373;
+  }
+  
+  .column li:focus {
+    outline: none;
+  }
+  
+  .column li.selected {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+
+.detail {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.detail p { 
+    color: rgb(16, 15, 15);
+    margin-top: 0px;
+    font-size: small;
+}
