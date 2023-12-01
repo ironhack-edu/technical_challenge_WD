@@ -1,0 +1,58 @@
+.phone-detail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .phone-detail-card {
+    display: flex;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .phone-details-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
+  }
+  
+  .phone-details {
+    padding: 20px;
+  }
+  
+  .phone-details h2 {
+    margin-bottom: 10px;
+    color: #3498db;
+  }
+  
+  .phone-details p {
+    margin-bottom: 8px;
+  }
+
+  .phone-detail-list {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .phone-details-info {
+    padding: 20px;
+  }
+  
+  .phone-details-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .phone-details-info p {
+    font-family: 'Arial', sans-serif; /* Use your preferred font family */
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
