@@ -1,0 +1,14 @@
+.homeLink {
+    font-size: 2em !important;
+    text-decoration: none !important;
+    color: #03A688;
+}
+
+.homeLink:hover {
+    color: #F2668B;
+    text-shadow: 2px 2px 4px rgb(242, 102, 139, 0.7);
+}
+
+.Navigation {
+    background-color: #011F26 !important;
+}

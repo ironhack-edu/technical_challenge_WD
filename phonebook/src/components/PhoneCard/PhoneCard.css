@@ -1,0 +1,17 @@
+img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.PhoneCard {
+    text-align: center;
+}
+
+.customButton {
+    background-color: #011F26 !important;
+    border: 0 !important;
+}
+
+.customButton:hover {
+    background-color: #03A688 !important;
+}
