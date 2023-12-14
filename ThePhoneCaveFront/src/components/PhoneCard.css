@@ -1,0 +1,6 @@
+.phone-card img {
+    height: 50vh;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 2px;
+}
