@@ -1,0 +1,11 @@
+.my-card {
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: gray;
+}
+
+.my-card-image {
+    max-height: 320px;
+    object-fit: cover;
+}
