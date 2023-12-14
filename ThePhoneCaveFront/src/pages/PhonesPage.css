@@ -1,0 +1,4 @@
+.detail-image {
+    height: 50vh;
+    object-fit: contain;
+}
