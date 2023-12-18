@@ -1,0 +1,46 @@
+#display-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.d-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.d-name span{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+.d-color-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.d-label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.d-disp-color{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.d-image > img{
+    width: 250px;
+    aspect-ratio: 1 / 1;
+
+}
+.d-description{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    max-width: 500px;
+}
