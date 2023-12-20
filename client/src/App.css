@@ -1,0 +1,41 @@
+/* App.css */
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: #c5c6c7;
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+  background-color: #1f2833;
+  text-transform: uppercase;
+  margin: 20px;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 5px 20px;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s, box-shadow 1s;
+}
+
+.button:hover {
+  color: #c5c6c7;
+  box-shadow: 0 0 10px #5dbfe3, 0 0 20px #5dbfe3, 0 0 40px #5dbfe3,
+    0 0 80px #5dbfe3;
+}
+
+.phone-card {
+  border: 1px solid;
+  margin: 10px 80px;
+  border-radius: 10px;  
+}
