@@ -24,7 +24,7 @@
   flex-wrap:wrap;
   justify-content: space-evenly;
   min-height: 100vh;
-  gap: 4rem ;
+  gap: 3rem 1rem ;
   padding: 1% 5%;
 }
 
