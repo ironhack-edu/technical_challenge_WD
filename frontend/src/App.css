@@ -1,0 +1,58 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid;
+  height: 50em;
+  width: 25em;
+  margin: 1em;
+  padding: 3em;
+}
+
+.card1-img {
+  height: 23em;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 1rem;
+  -webkit-line-clamp: 3 !important;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.detailpagewrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttondetail {
+  margin: 1rem;
+}
+
+.img-detail {
+  height: 40rem;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
