@@ -1,44 +1,63 @@
-# The Phone Cave (WD)
+#Technical Challenge WD
+At The Phone Cave, we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+Table of Contents
 
-## The challenge (Duration: 3 hours)
+- Getting Started
+  -Prerequisites
+  Installation
+  Usage
+  API Endpoints
+  Built With
+  Contributing
+  License
+  Acknowledgments
+  Getting Started
+  Prerequisites
+  Node.js: Make sure you have Node.js installed. You can download it here.
+  Installation
+  Clone the repository:
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+bash
+Copy code
+git clone https://github.com/gizemayegul/technical_challenge_WD.git
+Navigate to the project directory:
 
-### Iteration #1
+bash
+Copy code
+cd technical_challenge_WD
+Install dependencies for both the server and client:
 
-Create a REST API (NodeJS) server that meets the following requirements:
+bash
+Copy code
+npm install
+cd frontend
+npm install
+Start the development server using the fullstack script:
 
+bash
+Copy code
+npm run fullstack
+This will start both the Express.js server and the React development server concurrently.
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+Usage
+Describe how to use your application.
 
+API Endpoints
+GET /phones: Get a list of all phones.
+GET /phones/:id: Get details of a specific phone by ID.
+Built With
+Express.js - Backend framework for Node.js.
+React - JavaScript library for building user interfaces.
+Bootstrap - Frontend component library.
+Concurrently - Utility for running multiple commands concurrently.
+Contributing
+If you'd like to contribute, please fork the repository and create a new branch. Pull requests are welcome!
 
-### Iteration #2
+License
+This project is licensed under the ISC License.
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
-
-### Iteration #3
-
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
-
-Once done with this, do a pull request to submit your work. 
-
-
-## Deadline
-
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
-
-## Must-have Deliverables
-
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
+Acknowledgments
+Special thanks to React and Express.js communities.
+Inspiration, code snippets, etc.
+Feel free to customize the README file further based on your project's specific details and requirements.
