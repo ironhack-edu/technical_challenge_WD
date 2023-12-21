@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 500ms;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root{
+  background-color: #f5deb3;
+}
+
+
+.blurry {
+  filter: blur(25px);
+}
+
+#main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  gap: 3rem 1rem ;
+  padding: 1% 5%;
+}
+
+
+.MuiCard-root{
+  width: min-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-phone{
+  width: 20rem;
+  height: auto;
+}
+
+.big-phone{
+  width: 10rem;
+  height: auto;
+}
+
+.popover {
+  position: fixed;
+  top: calc(50% - 40%);
+  left: calc(50% - 40%);
+  width: 80%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 1%;
+}
+
+
+#close-button{
+  margin-top: 1rem;
+}
+
+.phone-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 5% 0;
+  margin: 0 auto  ;
+  line-height: 1.75rem;
+}
+
+.phone-container{
+  max-width: 75% ;
+  margin: auto  ;
+}
+
+.phone-description{
+  max-width: 25rem;
+  font-style: italic;
+}
+
+h1{
+  margin: 0.5rem 0;
+}
+hr{
+  margin: 0.5rem auto;
+  width: 80%;
+}
+
+span{
+  font-weight: bold;
+}
+
+.loading{
+  width: 15%;
+  height: 15%;
+}
+
+
+
+/* .popover > div {
+  border: 1px solid black;
+
+}*/
+
+
+
+
+
+
+
