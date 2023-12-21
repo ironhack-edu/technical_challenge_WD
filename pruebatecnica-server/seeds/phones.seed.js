@@ -1,6 +1,5 @@
-const mongoose = require("mongoose");
-
-const Phone = require("./../models/Phone.model");
+const mongoose = require("mongoose")
+const Phone = require("./../models/Phone.model")
 
 const phones = [
     {
@@ -99,23 +98,23 @@ const phones = [
         "processor": "Snapdragon 450",
         "ram": 3
     }
-];
+]
 
-const connectionString = "mongodb://127.0.0.1:27017/pruebatecnica-db";
+const connectionString = "mongodb://127.0.0.1:27017/pruebatecnica-db"
 
 mongoose
     .connect(connectionString)
     .then((x) => {
-        console.log(`Connected to Mongo database: "${x.connections[0].name}"`);
-        return Phone.create(phones);
+        console.log(`Connected to Mongo database: "${x.connections[0].name}"`)
+        return Phone.create(phones)
     })
     .then((phonesFromDB) => {
-        console.log(`Created ${phonesFromDB.length} phones`);
-        return mongoose.connection.close();
+        console.log(`Created ${phonesFromDB.length} phones`)
+        return mongoose.connection.close()
     })
     .then(() => {
-        console.log("DB connection closed!");
+        console.log("DB connection closed!")
     })
     .catch((err) => {
-        console.log(`An error occurred while creating books from the DB: ${err}`);
-    });
+        console.log(`An error occurred while creating books from the DB: ${err}`)
+    })
