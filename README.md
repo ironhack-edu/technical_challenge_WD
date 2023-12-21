@@ -50,19 +50,4 @@ Describe how to use your application.
 - **Bootstrap:** Frontend component library.
 - **Concurrently:** Utility for running multiple commands concurrently.
 
-## Contributing
 
-If you'd like to contribute, please fork the repository and create a new branch. Pull requests are welcome!
-
-## License
-
-This project is licensed under the [ISC License](LICENSE.md).
-
-## Acknowledgments
-
-- Special thanks to React and Express.js communities.
-- Inspiration, code snippets, etc.
-
-## Other Stuff
-
-Any additional information or sections you want to include can go here.
