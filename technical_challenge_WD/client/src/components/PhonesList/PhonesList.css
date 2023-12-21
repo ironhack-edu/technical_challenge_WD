@@ -1,0 +1,16 @@
+li{
+    list-style: none;
+}
+
+.phone-details{
+    margin: 0 auto;
+    width: 70%;
+    /* outline: solid 1px  black; */
+}
+
+@media (max-width: 768px) {
+    .phone-details{
+        display: flex;
+        flex-direction: column;
+    }
+}
