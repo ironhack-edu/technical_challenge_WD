@@ -11,7 +11,7 @@ router.get("/", (req, res, next) => {
 
 router.get("/phones", (req, res, next) => {
   if(phonesDB && phonesDB.length > 0)
-    res.json(phonesDB);
+    res.send(phonesDB);
   else
     resMsg(res, "Database problem");
 });
@@ -23,7 +23,7 @@ router.get("/phones/:id", (req, res, next) => {
     for(let i = 0; i < phonesDB.length; i++)
     {
       if(phonesDB[i].id == id)
-        return (res.json(phonesDB[i]));
+        return (res.send(phonesDB[i]));
     }
     resMsg(res, "Wrong product ID");
   }
