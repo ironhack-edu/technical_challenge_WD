@@ -4,6 +4,7 @@ import PhoneList from "../components/PhoneList";
 import Loader from "../components/Loader/Loader";
 
 const IndexPage = () => {
+    
     const [phones, setPhones] = useState();
 
     const loadPhones = () => {
