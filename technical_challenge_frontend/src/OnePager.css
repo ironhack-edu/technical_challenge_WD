@@ -1,0 +1,55 @@
+.phone-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    text-align: center;
+    width: 15%;
+    border: 1px solid gray;
+}
+
+.phone-list h2{
+    color: white;
+    align-self: center;
+}
+
+.phone-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    align-self: center;
+    padding: 0;
+}
+
+.phone-list li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    justify-content: center;
+    border: 1px solid gray;
+    margin-bottom: 1em;
+    padding: 5%;
+    white-space: nowrap;
+}
+
+.phone-list li:hover {
+    background-color: darkcyan;
+}
+
+.phone-detail {
+    color: white;
+    border: 1px solid gray;
+    width: 85%;
+}
+
+@media (max-width: 715px) {
+    .phone-list {
+      width: 100%;
+    }
+    .phone-detail {
+        width: 100%;
+    }
+    }
