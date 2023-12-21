@@ -56,17 +56,3 @@ p {
   justify-content: center;
   align-items: center;
 }
-
-.navbar {
-  display: flex;
-  align-items: center;
-  background-color: black;
-  justify-content: center;
-  margin: 2em auto;
-  padding: 1em;
-}
-
-.navbar > a {
-  margin: auto 2rem;
-  text-decoration: none;
-}
