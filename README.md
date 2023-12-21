@@ -13,5 +13,5 @@ Then just click a phone to see the details from the list.
 
 Notes:
 Did not found the need to add a Navbar for such a simple project as there is no navigations.
-100% resposive.
+100% responsive.
 Decided to have a little different aproach to what was asked, so the loading screens are simulated via JS.
