@@ -1,0 +1,12 @@
+.nav-bar{
+  background-color: purple;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: calc(100%);
+  height:55px;
+  box-shadow: 0 1px 20px rgb(53, 39, 26);
+  justify-content: space-between;
+  }
