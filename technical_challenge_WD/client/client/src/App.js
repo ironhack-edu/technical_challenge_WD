@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import { Route, Routes } from 'react-router-dom';
 
-import MyNavbar from "./components/MyNavbar";
 import Home from "./pages/Home";
+import MyNavbar from "./components/MyNavbar";
 import PhoneDetails from "./pages/PhoneDetails";
-import NotFound from "./pages/NotFound";
-import Error from "./pages/Error";
 
 import Spinner from "react-bootstrap/Spinner";
 import { useEffect, useState } from 'react';
@@ -25,7 +23,7 @@ function App() {
 
   const getPhonesList = async () => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/phones`)
+      const response = await axios.get(`${process.env.PORT}/phones`)
     
       setTimeout(() => {
         setPhoneList(response.data)
@@ -50,11 +48,8 @@ function App() {
 
 <div id="page">
   <Routes>
-    <Route path="/" element={ <Home /> }/>
+  <Route path="/" element={ <Home /> }/>
     <Route path="/phone-details/:phoneId" element={ <PhoneDetails phonesList={phonesList} /> }/>
-
-    <Route path="/error" element={ <Error />}/>
-    <Route path="/*" element={ <NotFound />}/>
 
   </Routes>
 </div>

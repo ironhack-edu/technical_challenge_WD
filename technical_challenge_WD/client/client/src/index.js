@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 const container = document.getElementById("root");
 
-const root = ReactDOMClient.createRoot(container);
+const root = ReactDOM.createRoot(container);
 
 root.render(
   <BrowserRouter>
