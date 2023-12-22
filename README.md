@@ -1,44 +1,60 @@
-# The Phone Cave (WD)
+# Phone Catalog App
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+The Phone Catalog App is a simple React application that allows users to view a list of phones and their details. It fetches phone data from a mock REST API and displays the information in an organized manner. Users can click on a phone in the list to view detailed information about that particular phone.
 
-## The challenge (Duration: 3 hours)
+## Features
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+- View a list of phones with basic details.
+- Click on a phone in the list to see detailed information in a modal popup.
+- Responsive design for a seamless user experience.
 
-### Iteration #1
+## Getting Started
 
-Create a REST API (NodeJS) server that meets the following requirements:
+### Prerequisites
 
+Before running the app, make sure you have the following installed:
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
+- npm (Node Package Manager): This is included with Node.js installation.
 
+### Installation
 
-### Iteration #2
+1. Clone the repository to your local machine:
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
+   ```bash
+   git clone https://github.com/davidvlucca/technical_challenge_WD.git)https://github.com/davidvlucca/technical_challenge_WD.git
 
-### Iteration #3
+2. Navigate to the project directory:
 
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
+   ```bash
+   cd phone-app
 
-Once done with this, do a pull request to submit your work. 
+3. Install dependencies:
 
+   ```bash
+   npm install
 
-## Deadline
+5. Running the app
 
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
+   ```bash
+   npm run dev
 
-## Must-have Deliverables
+7. Start the Node.js server for the mock API:
 
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
+   ```bash
+   cd phone-api
+   npm install
+   nodemon app.js
+
+This will start the API server at http://localhost:3000.
+
+## Usage
+
+The app will initially display a list of phones.
+
+Click on a phone in the list to view detailed information in a modal popup.
+Enjoy exploring the phone catalog!
+
+## Technologies Used
+React.js
+Axios for API requests
