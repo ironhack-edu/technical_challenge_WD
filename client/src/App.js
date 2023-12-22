@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import PhonePage from "./pages/PhonePage";
 import { useEffect, useState } from "react";
-
+import NavBar from "./components/NabBar";
 
 function App() {
 
@@ -28,13 +28,15 @@ function App() {
     fetchPhones()
   }, [])
 
-
   return (
     <>
-     <Routes>
+
+      <NavBar />
+
+      <Routes>
         <Route path="/" element={<HomePage displayedPhones={phones} />} />
         <Route path="phones/:id" element={<PhonePage displayedPhones={phones} />} />
-     </Routes>
+      </Routes>
     </>
   );
 }

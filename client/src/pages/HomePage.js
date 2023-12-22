@@ -6,22 +6,24 @@ function HomePage({ displayedPhones }){
     console.log(displayedPhones)
 
     return(
-        <> 
-            <h1>Phones in Homepage</h1>
+        <div className="container"> 
+            <h1 className="centered"><span>ThePhoneCave</span>Phones</h1>
 
-            {displayedPhones.length !== 0 ? (
-                displayedPhones.map((elm, index) => {
-                    return(
-                        <Link to={`/phones/${elm.id}`} className="card" key={index}>
-                            <h2>{elm.name}</h2>
-                            <img src={`/images/${elm.imageFileName}`} alt="" />
-                        </Link>
-                    )
-                })
-            ) : (
-                <PageLoader />
-            )}
-        </>
+            <div className="cards-container flex">
+                {displayedPhones.length !== 0 ? (
+                    displayedPhones.map((elm, index) => {
+                        return(
+                            <Link to={`/phones/${elm.id}`} className="card" key={index}>
+                                <h2>{elm.name}</h2>
+                                <img src={`/images/${elm.imageFileName}`} alt="" />
+                            </Link>
+                        )
+                    })
+                ) : (
+                    <PageLoader />
+                )}
+            </div>
+        </div>
     )
 }
 

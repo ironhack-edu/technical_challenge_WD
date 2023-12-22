@@ -22,39 +22,40 @@ function PhonePage({ displayedPhones }) {
   }, [displayedPhones, id]);
 
   return (
-    <>
-      <h1>Phone Detail Page</h1>
-      {isLoading ? (
-        <PageLoader />
-      ) : phone ? (
-        <div key={phone.id}>
-          <div className="phone-info">
-            <h1>{phone.name}</h1>
-            <h2>{phone.price}€</h2>
-            <h3>
-              <span>Manufacturer:</span>
-              {phone.manufacturer}
-            </h3>
-            <h3>
-              <span>Processor:</span>
-              {phone.processor}
-            </h3>
-            <h3>
-              <span>Ram:</span>
-              {phone.ram}
-            </h3>
-            <h3>
-              <span>Screen:</span>
-              {phone.screen}
-            </h3>
-            <p>{phone.description}</p>
-          </div>
-          <div className="image-wrap">
-            <img src={`/images/${phone.imageFileName}`} alt="" />
-          </div>
-        </div>
-      ) : null}
-    </>
+    <div className="container DetailPage">
+          {isLoading ? (
+            <PageLoader />
+          ) : phone ? (
+            <div className="flex" key={phone.id}>
+              <div className="phone-info">
+                <h1>{phone.name}</h1>
+                <h2>{phone.price}€</h2>
+                <h3>
+                  <span>Manufacturer:</span>
+                  {phone.manufacturer}
+                </h3>
+                <h3>
+                  <span>Processor:</span>
+                  {phone.processor}
+                </h3>
+                <h3>
+                  <span>Ram:</span>
+                  {phone.ram}
+                </h3>
+                <h3>
+                  <span>Screen:</span>
+                  {phone.screen}
+                </h3>
+                <hr />
+                <p>{phone.description}</p>
+              </div>
+              <div className="image-wrap">
+                <img src={`/images/${phone.imageFileName}`} alt="" />
+              </div>
+            </div>
+          ) : null
+          }
+    </div>
   );
 }
 
