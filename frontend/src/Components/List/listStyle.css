@@ -1,0 +1,29 @@
+#list-container{
+    border: 1px solid rgba(0, 0, 0, 0.059);
+    border-radius: 3px;
+    padding: 20px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(255, 255, 255, 0.635);
+}
+.list-entry{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.157);
+    transition: 0.15s linear all;
+    user-select: none;
+}
+.list-entry > button{
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+
+}
+.list-entry > button:hover{
+    background-color: rgba(0, 0, 0, 0.04);
+}
+.list-entry:last-child{
+    border-bottom: none;
+
+}
