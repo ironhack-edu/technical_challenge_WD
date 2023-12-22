@@ -7,11 +7,11 @@ router.get("/phones", (req, res, next) => {
     res.json(phoneData)
 })
 
-router.get("/phones/:phoneId", (req, res, next) => {
+router.get("/phones/:id", (req, res, next) => {
 
-    const { phoneId } = req.params
+    const { id } = req.params
 
-    const selectedPhone = phoneData.filter(phone => phone.id === parseInt(phoneId))
+    const selectedPhone = phoneData.filter(phone => phone.id === parseInt(id))
 
     res.json(selectedPhone)
 })
