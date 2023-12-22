@@ -1,0 +1,40 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.PhonesList {
+    list-style: none;
+}
+
+.PhoneImage {
+  width: 400px;
+}
+
+.DetailsContainer.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: auto;
+}
+
+.DetailsContainer.hide {
+    display: none;
+}
+
+@media (max-width: 1080px) {
+    .DetailsContainer.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 20px 0;
+    }
+    .PhoneImage {
+        width: 200px;
+    }
+}
