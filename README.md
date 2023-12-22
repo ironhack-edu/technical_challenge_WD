@@ -1,6 +1,6 @@
 # The Phone Cave (WD)
 
-At The Phone Cave  is a simple web application that allows users to browse through a catalog of mobile phones. The app provides a list of phones with their basic details and allows users to view more information about each phone.
+The Phone Cave  is a simple web application that allows users to browse through a catalog of mobile phones. The app provides a list of phones with their basic details and allows users to view more information about each phone.
 
 ## Features
 
