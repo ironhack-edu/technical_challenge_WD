@@ -1,8 +1,6 @@
-# React + Vite
+# The Phone Cave
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Welcome to **The Phone Cave**, your guide to the latest phones!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- For the Web Development Technical Challenge, I've designed this app to show you a list of phones and their details.

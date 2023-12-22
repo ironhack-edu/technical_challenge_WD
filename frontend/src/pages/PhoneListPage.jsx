@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from "axios"
-import PhoneDetails from '../../components/phoneDetails'
+import PhoneDetails from '../components/phoneDetails'
 
 const API_URL = "http://localhost:3000"
 
@@ -26,7 +26,8 @@ function PhoneListPage() {
 
     return (
         <div className='PhonesListPage'>
-            <h1>Phones List</h1>
+            <h1>Welcome to The Phone Cave!</h1>
+            <h2>Phones List</h2>
             {phonesList === null
                 ? <p>Loading phones list...</p>
                 : (

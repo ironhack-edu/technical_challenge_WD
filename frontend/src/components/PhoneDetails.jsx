@@ -33,7 +33,7 @@ function PhoneDetails(props) {
                 ? <h1>Loading details...</h1>
                 : <div className={`DetailsContainer ${showPhoneDetails ? "show" : "hide"}`}>
                     <div className="PhoneImageContainer">
-                        <img src={`./public/images/${phoneDetails[0].imageFileName}`} alt={phoneDetails[0].name} className="PhoneImage" />
+                        <img src={`./images/${phoneDetails[0].imageFileName}`} alt={phoneDetails[0].name} className="PhoneImage" />
                     </div>
                     <div className="PhoneDetailsContainer">
                         <h1>{phoneDetails[0].name}</h1>
