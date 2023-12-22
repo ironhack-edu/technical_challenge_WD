@@ -1,0 +1,15 @@
+{
+  "name": "technical_challenge_wd",
+  "version": "1.0.0",
+  "description": "At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
