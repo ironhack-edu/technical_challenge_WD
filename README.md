@@ -1,44 +1,29 @@
-# The Phone Cave (WD)
+# Phone Catalog App
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+This is a simple React application that communicates with a REST API to display a list of phones. The app allows users to select a phone from the list to view detailed information about that phone on the same page.
 
-## The challenge (Duration: 3 hours)
+## Features
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+- Fetches phone data from a REST API using Axios.
+- Displays a list of phones with their images and names.
+- Allows users to click on a phone to view detailed information.
 
-### Iteration #1
+## Getting Started
 
-Create a REST API (NodeJS) server that meets the following requirements:
+1. Clone the repository:
+   git clone https://github.com/Melim10/technical_challenge_WD.git
 
+2. Install Dependecies:
+  npm install
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+3. Start the development server:
+  cd server/
+  npm run dev
 
+4. Start the client application:
+  cd client/
+  npm run dev
 
-### Iteration #2
+5. Open your browser and go to http://localhost:5173 to view the app.
+  
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
-
-### Iteration #3
-
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
-
-Once done with this, do a pull request to submit your work. 
-
-
-## Deadline
-
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
-
-## Must-have Deliverables
-
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
