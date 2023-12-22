@@ -4,12 +4,13 @@
   "description": "At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fullstack": "concurrently --kill-others \"npm --prefix ./backend run dev\" \"npm --prefix frontend run dev\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "express": "^4.18.2"
   }
 }
