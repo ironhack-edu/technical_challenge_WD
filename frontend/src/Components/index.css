@@ -1,0 +1,7 @@
+#store {
+    display: flex;
+  }
+  
+#allPhones {
+    overflow-y: 400px;
+  }
