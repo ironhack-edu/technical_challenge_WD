@@ -1,7 +1,60 @@
-#store {
-    display: flex;
-  }
-  
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#title {
+  position:fixed;
+  top: 0;
+  justify-content: center;
+}
+#content {
+  border: 1px solid teal;
+  display: flex;
+  position: fixed;
+  top: 11em;
+  left: 10%;
+  width: calc(100% - 20%);
+}
 #allPhones {
-    overflow-y: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    max-height: 31em;
+    min-width: 15em;
+    max-width: 15em;
+    padding-bottom: 0.5em;
   }
+#allButtons {
+    background-color: transparent;
+    display: inline-block;
+    width: 13em;
+    height: 5em;
+    padding-top: 0.4em;
+  }
+#allButtons:hover {
+  min-width: 13em;
+  max-width: 13em;
+  }
+#onePhone {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 3em 0.5em 0.5em;
+  height: 30em;
+  min-width: calc(100%-20%);
+  max-width: calc(100%-20%);
+  }
+#onePhone img{
+  max-width: 21em;
+  min-width: 20em;
+  }
+#spinner {
+  size: 5em;
+}
+#select {
+  display: flex;
+  justify-content: center;
+  width: 61em;
+  padding-top: 10em;
+}
