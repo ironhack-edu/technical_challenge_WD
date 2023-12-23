@@ -8,9 +8,6 @@ const phones = require('./data/phones.json');
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
 
 app.get('/phones', (req,res) => {
     res.send(phones)
