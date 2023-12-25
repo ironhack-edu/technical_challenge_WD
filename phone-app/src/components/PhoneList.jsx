@@ -9,8 +9,8 @@ const PhoneList = () => {
     useEffect(() => {
         const fetchPhones = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/phones');
-                setPhones(response.data);
+                const response = await axios.get('http://localhost:5005/phones');
+                 setPhones(response.data);
                 console.log(response.data);
             } catch (error){
                 console.error('Error fetching phones:', error);
