@@ -4,7 +4,7 @@ const PhoneList = ({ allPhones }) => {
   return (
     <div className="phone-list-component">
       <div>
-        <h1>Availables Phones</h1>
+        <h1>Available Phones</h1>
       </div>
 
       {allPhones.length > 0 && (
