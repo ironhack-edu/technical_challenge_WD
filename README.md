@@ -1,44 +1,29 @@
-# The Phone Cave (WD)
+# The Phone Cave Catalog App
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+This app allows users to browse through a catalog of phones available at The Phone Cave store. Users can view a list of all phones, select a specific phone to see its details, and view images of each device. The app communicates with a REST API server to fetch the necessary data.
 
-## The challenge (Duration: 3 hours)
+## How to Use
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
-
-### Iteration #1
-
-Create a REST API (NodeJS) server that meets the following requirements:
-
-
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+1. Clone this repository to your local machine.
+2. Navigate to the root directory of the project.
+3. Install dependencies by running npm install.
+4. Start the NodeJS server by running npm start in the terminal.
+5. Once the server is running, navigate to the client directory.
+6. Inside the client directory, install dependencies by running npm install.
+7. Start the React application by running npm start in the terminal.
+8. Open your web browser and go to http://localhost:5173 to view the app.
 
 
-### Iteration #2
+## Features
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
-
-### Iteration #3
-
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
-
-Once done with this, do a pull request to submit your work. 
+- **View Phones**: Browse through a list of all phones available at The Phone Cave store.
+- **Phone Details**: Select a phone from the list to view detailed information about the selected phone model.
+- **Loading Indicator**: A spinner component is displayed while waiting for the API response, ensuring a smooth user experience.
 
 
-## Deadline
+## Technologies Used
 
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
-
-## Must-have Deliverables
-
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
+- **Node.js**: Used to create the REST API server.
+- **React**: Used to build the frontend of the application.
+- **Axios**: Utilized for making HTTP requests to the REST API.
+- **React Bootstrap**: Styling the components to ensure an attractive user interface.
