@@ -1,0 +1,83 @@
+/* App.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.phone-card {
+  width: 45%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.phone-card:hover {
+  transform: translateY(-5px);
+}
+
+.phone-image {
+  
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.phone-details {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.phone-details h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.selected-phone {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selected-phone h2 {
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  /* Blue background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+  /* Darker blue on hover */
+}
+
+
+.selected-phone-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  /* Set maximum width */
+  height: auto;
+  border-radius: 10px;
+}
