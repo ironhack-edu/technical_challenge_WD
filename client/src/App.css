@@ -1,0 +1,100 @@
+body {
+  background-color: #5e5e5e !important;
+}
+.App {
+  text-align: center;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #3b82f6;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+/* Spacing utilities */
+.spacing-xs {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.spacing-sm {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.spacing-md {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.spacing-lg {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Flex utilities */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card styles */
+.PhoneCard {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-evenly !important;
+  flex-wrap: wrap !important;
+  gap: 50px !important;
+}
+.card {
+  background-color: #c3c6cb !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.content {
+  transition: margin-left 0.4s ease-in-out;
+}
+
+.content.shifted {
+  margin-left: 250px;
+}
+
+/* Details Page */
+
+.detailsCard {
+  display: flex;
+  justify-content: center;
+  margin: 10rem;
+}
