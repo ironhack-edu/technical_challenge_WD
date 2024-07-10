@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  body {
+    background-color: #dbdceb;
+  }
+  
+  #phones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  #phoneImage {
+    width: 13rem;
+  
+  }
+  
+  #phoneCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    width: 16rem;
+    height: 20rem;
+    border-radius: 2.5%;
+    border:rgb(58, 58, 58);
+    justify-content: center;
+    background-color: white;
+    box-shadow: 1px 1px 10px 0px #1f52a3;
+    background-color: rgb(200, 223, 249);
+  }
+  
+  a {
+    text-decoration: none;
+    font: bold;
+    color: rgb(58, 58, 58);
+  }
+  
+  #phoneDetails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 2%;
+    background-color: rgb(200, 223, 249);
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    box-shadow: 1px 1px 10px 0px #1f52a3;
+    padding: 2rem;
+    margin: 4rem;
+  }
+  
+  #phoneDetails > p {
+    margin: 1%;
+  }
+  
+  #phoneDetailsContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+   #btn {
+    margin: 1rem;
+    padding: 2% 1rem; 
+    background-color: black;
+    box-shadow: 1px 1px 10px 0px #1f52a3;
+    border:rgb(58, 58, 58);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0.8rem;
+ }
