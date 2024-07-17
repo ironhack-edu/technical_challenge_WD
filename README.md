@@ -41,4 +41,30 @@ In the event that after three hours you do not have the MVP objectives ready, se
 
 - Functioning code (server and client side)
 - Short README file describing what is the app about and add instructions on how to use it.
- 
+
+---------------------------------------------- 
+
+## Installation
+
+1. Clone the repository:
+   git clone <repository-url>
+   cd <repository-directory>
+
+2. npm install
+3. npm start
+
+navigate to http://localhost:3000/phones 
+
+API Endpoints
+GET /phones - Retrieves a list of all phones.
+GET /phones/:id - Retrieves details of a specific phone by ID.
+
+# Client
+
+This project is a React application for displaying a catalog of phones. It communicates with a Node.js API to fetch phone data.
+
+## Installation
+
+npm install
+cd client
+npm start

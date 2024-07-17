@@ -1,0 +1,24 @@
+.phone-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .phone-button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 auto;
+    max-width: 150px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .phone-button:hover {
+    background-color: lightgray;
+  }
+  
